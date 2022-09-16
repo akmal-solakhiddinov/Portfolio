@@ -184,3 +184,6 @@ width: 100%;
 /* End of HOME PAGE */
 
 
+.contact input, textarea{
+  border: 1px solid var(--btn-color);
+}
