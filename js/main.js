@@ -1,26 +1,34 @@
-// Dark mode 
-const mode = document.querySelector('#night');
-const body = document.querySelector('body');
-// const elemnt1 = document.querySelector('header');
-// const elemnt2 = document.querySelector('a');
-// const elemnt3 = document.querySelector('.text-inform');
+// Dark mode
+const mode = document.querySelector("#night");
+const body = document.querySelector("body");
+const header = document.querySelector("header");
+let initail = document.querySelector(".text-inform");
+let anchar = document.getElementsByClassName(".link-tag");
 
-mode.addEventListener('change',()=>{
-    body.classList.toggle('nightMode');
-    // elemnt1.classList.toggle('.active');
-    // elemnt2.classList.toggle('.active');
-    // elemnt3.classList.toggle('.active');
+
+mode.addEventListener("change", () => {
+  body.classList.toggle("nightMode");
+  header.classList.toggle(".active");
+  initail.classList.toggle(".active");
+
 });
 
-const elements =document.querySelector('header, a, .text-inform');
-  document.querySelector('#night').onclick= () =>{
-    elements.classList.toggle('.active');
-  }
+
+document.getElementById("#night").onclick = () => {
+  anchar.classList.toggle(".active")
+};
+
+document.querySelector("#night").onclick = () => {
+};
+
+// Ending of dark mode
+
+/* auto */
 
 
 
+/* end///// */
 
-// Ending of dark mode 
 
 /* 
 // fade 

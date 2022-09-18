@@ -51,12 +51,10 @@
     <!-- Home -->
     <section class="home" id="home">
         <div class="text-inform">
-            <h2>Hello</h2>
-            <h1> I'm Akmal Solakhiddinov</h1>
-            <br>
-            <h3>Front-End Developer</h3>
+            <h1>Hy! I am</h1>
+            <span class="auto">Akmal Solakhiddinov</span>
             <p class="initial-data">
-                This is my portfolio website, there are iformation about what i know how contact with me. In this
+                This is my portfolio website, there are iformations about what i know how contact with me. In this
                 website every single elements works, please write comments if you have any advice to me.
             </p>
             <div class="btn-box btn">
@@ -89,13 +87,15 @@
     <!-- End portfolio -->
     <!-- Contact -->
     <section class="contact" id="contact">
-        <div class="container-form">
-            <form name="contact" method="POST" data-netlify="true">
-                <input type="text" placeholder="name" class="name" />
-                <input type="email" placeholder="email"  class="email name"/>
-                <textarea name="message"></textarea></label>
-                <button type="submit">Send</button>
-            </form>
+        <div class="container">
+            <div class="container-form">
+                <form name="contact" method="POST" data-netlify="true">
+                    <input type="text" placeholder="name" class="name" />
+                    <input type="email" placeholder="email" class="email name" />
+                    <textarea name="message" rows="5" cols="60" placeholder="Massage"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </div>
     </section>
     <!-- End Contact -->
@@ -105,8 +105,17 @@
 
     </section>
     <!-- End blog -->
-
-    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   <script>
+    var typed = new Typed(".auto", {
+  strings: ["Akmal Solakhiddinov", "Front-End Dev", "Python dev"],
+  typeSpeed: 100,
+  backSpeed: 110,
+  loop: true,
+});
+   </script>
+   <script src="js/main.js">
+    </script>
 </body>
 
 </html>
