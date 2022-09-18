@@ -19,6 +19,7 @@ html {
   background-color: white;
 }
 
+
 :root {
   --main-bg-color: white;
   --dark-mode-bg-color: #000;
@@ -29,6 +30,7 @@ html {
 section{
   padding: 5rem 9%;
 }
+
 
 /* Beggining of Header  */
 
@@ -46,7 +48,7 @@ header {
   background-color: white;
 }
 header.\.active{
-  background-color: black;
+  background-color: rgb(37, 37, 37);
 }
 
 
@@ -72,9 +74,6 @@ header nav ul li a{
   position: relative;
 }
 
-a.\.active{
-  color: wheat;
-}
 
 
 
@@ -104,7 +103,7 @@ header nav ul li a:hover::after{
 /* DARK Mode  */
 .nightMode{
   transition: .4s all ease-in;
-  background-color: #0d1117;
+  background-color: rgb(43, 44, 44);
   color: white;
 }
 .switch{
@@ -161,15 +160,17 @@ input[type="checkbox"]:checked:before{
 width: 100%;
  }
 
+
  .text-inform{
   display: block;
-  padding: 1rem;
+  padding: 3rem 1rem;
  }
 
 
 
  .text-inform h1, h2, h3{
-  font-size: 3rem;
+  font-size: 3.5rem;
+  font-weight: 700;
   color: var(--btn-color);
  }
 
@@ -177,13 +178,52 @@ width: 100%;
   font-size: 4.5rem;
  }
 
- .text-inform   h1.hange{
-  color: white;
+
+ .text-inform p{
+  font-size: 1.7rem;
+  font-weight: 600;
+  max-width: 55rem;
+  padding: 2rem 0;
+  color: rgb(59, 59, 59);
+  line-height: 3rem;
  }
 
+
+.btn-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3rem;
+  height: 2.4em;
+  width: 8em;
+  background-color: var(--btn-color);
+  border-radius: 1rem;
+}
+
+.btn-box:hover>a{
+  color: var(--btn-color)
+}
+
+.btn-box:hover{
+  background: none;
+  transition: .4s linear;
+  border: 2px solid var(--btn-color);
+}
+
+.btn-box a{
+  color: white;
+}
 /* End of HOME PAGE */
 
 
-.contact input, textarea{
-  border: 1px solid var(--btn-color);
-}
+/* Beggining of Contact page  */
+  .container{
+    display: flex;
+    flex-direction:row;
+  }
+
+  .contact .container .form .name{
+    border: 2px solid var(--btn-color);
+  }
+/* Ending of CONTACT PAGE  */
