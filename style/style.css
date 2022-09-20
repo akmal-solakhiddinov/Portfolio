@@ -336,6 +336,24 @@ input[type="checkbox"]:checked:before {
 .skills .card-box p{
   font-size: 3rem;
 }
+
+.skills .card-box progress{
+  width: 50%;
+  height: 2rem;
+  border: 1px solid burlywood;
+  border-radius: 1rem;
+  background: none;
+  outline: none;
+}
+
+.skills .card-box progress[value]::-webkit-progress-bar{
+  background: none;
+  border-radius: 1rem;
+}
+
+.skills .card-box progress[value]{
+}
+
 /* Ending of SKILLS PAGE  */
 
 /* Beggining of Contact page  */
