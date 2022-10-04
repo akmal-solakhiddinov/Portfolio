@@ -50,7 +50,7 @@
 
     <!-- Home -->
     <section class="home" id="home">
-        <div class="text-inform">
+        <div class="text-inform fadeInLeft">
             <h1>Hi! I am</h1>
             <span class="auto">Akmal Solakhiddinov</span>
             <p class="initial-data">
@@ -62,7 +62,7 @@
             </div>
 
         </div>
-        <div class="image">
+        <div class="image fadeInRight">
             <img src="img/myImg.png" alt="" class="myImg">
         </div>
     </section>
@@ -70,10 +70,10 @@
 
     <!-- About -->
     <section class="about" id="about">
-        <div class="heading">
+        <div class="heading fadeInLeft">
             <h1>About me</h1>
         </div>
-        <div class="text-container">
+        <div class="text-container fadeInUp">
             <p>
                 As you know I'm Akmal Solakhiddinov Front-End Developer also I'm student at Tashkent International
                 University of Education. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, laborum?
@@ -100,31 +100,45 @@
     <section class="skills" id="skills">
         <div class="card-box">
             <p> <i class="fa-brands fa-html5"></i> HTML</p>
-            <progress value="80" max="100">80%</progress>
+            <div class="progress_bar">
+                <div class="progress_html"></div>
+            </div>
         </div>
         <div class="card-box">
             <p> <i class="fa-brands fa-css3"></i> CSS</p>
-            <progress value="70" max="100"></progress>
+            <div class="progress_bar">
+                <div class="progress_css"></div>
+            </div>
         </div>
         <div class="card-box">
             <p> <i class="fa-brands fa-js"></i> JavaScript</p>
-            <progress value="40" max="100"></progress>
+            <div class="progress_bar">
+                <div class="progress_javascript"></div>
+            </div>
         </div>
         <div class="card-box">
             <p> <i class="fa-brands fa-react"></i> React</p>
-            <progress value="2" max="100"></progress>
+            <div class="progress_bar">
+                <div class="progress_react"></div>
+            </div>
         </div>
         <div class="card-box">
             <p> <i class="fa-brands fa-python"></i> Python</p>
-            <progress value="10" max="100"></progress>
+            <div class="progress_bar">
+                <div class="progress_python"></div>
+            </div>
         </div>
         <div class="card-box">
             <p> <i class="fa-brands fa-php"></i> PHP</p>
-            <progress value="5" max="100"></progress>
+            <div class="progress_bar">
+                <div class="progress_php"></div>
+            </div>
         </div>
         <div class="card-box">
             <p>SQL</p>
-            <progress value="3" max="100"></progress>
+            <div class="progress_bar">
+                <div class="progress_sql"></div>
+            </div>
         </div>
     </section>
     <!-- End services -->
@@ -138,11 +152,12 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="container-form">
-                <form name="contact" method="POST" data-netlify="true">
-                    <input type="text" placeholder="name" class="name" />
-                    <input type="email" placeholder="email" class="email name" />
-                    <textarea name="message" rows="5" cols="60" placeholder="Massage"></textarea>
-                    <button type="submit">Send</button>
+                <form action="contactForm.php" method="post">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="Massage" id="" cols="30" rows="5"></textarea>
+                    <button type="submit"> Send</button>
                 </form>
             </div>
         </div>
