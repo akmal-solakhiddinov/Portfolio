@@ -62,10 +62,6 @@ header nav ul {
   flex-wrap: wrap;
 }
 
-header nav .global-list.\.active > a {
-  color: white;
-}
-
 header nav ul li {
   padding: 1rem;
 }
@@ -101,6 +97,14 @@ header nav ul li a:hover::after {
   cursor: pointer;
   width: 100%;
   left: 0;
+}
+
+header #menuBtn{
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: var(--btn-color);
 }
 
 /* DARK Mode  */
@@ -320,17 +324,31 @@ input[type="checkbox"]:checked:before {
 
 /* begining of SKILLS PAGE  */
 .skills {
-  display: grid;
-  grid-template-columns: 50rem 50rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
+.skills .heading {
+  display: block;
+  text-align: center;
+  font-size: 4rem;
+  color: var(--btn-color);
+}
+
+.skills .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: auto;
+}
+
 .skills .card-box {
   display: block;
-  padding: 1rem 20rem 1rem 1rem;
+  width: 50rem;
+  padding: 1rem 10rem 1rem 10rem;
 }
 
 .skills .card-box p {
@@ -339,51 +357,91 @@ input[type="checkbox"]:checked:before {
 
 .skills .card-box .progress_bar {
   width: 100%;
-  height: 1rem;
+  height: 1.1rem;
   background: none;
   border: 1px solid black;
   border-radius: 1rem;
 }
 
-
 .skills .card-box .progress_bar .progress_html {
   background-color: #6e40c9;
-  display: block;
   width: 80%;
-  height: .8rem;
-  position: relative
+  height: 0.8rem;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  position: relative;
 }
 
 .skills .card-box .progress_bar .progress_css {
   background-color: #6e40c9;
+  width: 70%;
+  height: 0.8rem;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  position: relative;
 }
 
 .skills .card-box .progress_bar .progress_javascript {
   background-color: #6e40c9;
+  width: 30%;
+  height: 0.8rem;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  position: relative;
 }
 
 .skills .card-box .progress_bar .progress_react {
   background-color: #6e40c9;
+  width: 6%;
+  height: 0.8rem;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  position: relative;
 }
 
 .skills .card-box .progress_bar .progress_python {
   background-color: #6e40c9;
+  width: 20%;
+  height: 0.8rem;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  position: relative;
 }
 
 .skills .card-box .progress_bar .progress_php {
   background-color: #6e40c9;
+  width: 15%;
+  height: 0.8rem;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  position: relative;
 }
 
-.card-box .progress_bar .progress_sql{
-  display: block;
+.card-box .progress_bar .progress_sql {
   background-color: #6e40c9;
-  width: 80%;
-  height: 1rem;
+  width: 8%;
+  height: 0.8rem;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  position: relative;
 }
 
 /* Ending of SKILLS PAGE  */
 
 /* Beggining of Contact page  */
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .heading {
+  display: block;
+  text-align: center;
+  font-size: 4rem;
+  color: var(--btn-color);
+  padding: 2rem;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -391,10 +449,31 @@ input[type="checkbox"]:checked:before {
   justify-content: space-around;
   box-shadow: var(--box-shadow);
 }
+
+.contact .container .social-m {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.contact .container .social-m .social_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  border: 2px solid var(--btn-color);
+  border-radius: 50%;
+  padding: 1rem;
+  width: 7rem;
+  height: 7rem;
+}
+
 .contact .container .container-form form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 40rem;
 }
 
 input[type="text"],
@@ -407,9 +486,30 @@ input[type="email"] {
 }
 
 .contact .container .container-form form textarea {
-  padding: 1rem;
+  padding: 2rem;
+  resize: none;
   background-color: transparent;
+  border: none;
 }
+
+.contact .container .container-form form button {
+  width: 20rem;
+  padding: 2rem;
+  margin: 0 auto;
+  font-size: 3rem;
+  color: var(--btn-color);
+  background: none;
+  border-radius: 2rem;
+  border: 2px solid var(--btn-color);
+}
+
+.contact .container .container-form form button:hover {
+  transform: scale(1.03);
+  background-color: var(--btn-color);
+  color: white;
+  transition: 0.1s linear;
+}
+
 /* Ending of CONTACT PAGE  */
 
 /* Begining of MEDIA SECTION  */
@@ -426,11 +526,30 @@ input[type="email"] {
   section {
     padding: 2rem;
   }
+
+  .skills .card-box .progress_bar {
+    width: 100%;
+  }
 }
 
 @media (max-width: 771px) {
   header nav ul {
     display: none;
+  }
+
+  header #menuBtn{
+    display: block;
+  }
+
+  .skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .skills .card-box .progress_bar {
+    width: 100%;
   }
 }
 
@@ -440,8 +559,26 @@ input[type="email"] {
     font-size: 50%;
   }
 
+  header #menuBtn{
+    display: block;
+  }
+
+
   .heading {
     font-size: 2.5rem;
+  }
+
+  section {
+    padding: 3rem 2rem;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills .card-box .progress_bar {
+    width: 100%;
   }
 }
 /* Ending of MEDIA SECTION  */

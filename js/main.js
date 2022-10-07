@@ -23,6 +23,13 @@ document.querySelector("#night").onclick = () => {
 
 // Ending of dark mode
 
+let menuBtn = document.querySelector('.global');
+
+document.querySelector('#menuBtn').onclick = () => {
+    menuBtn.classList.toggle('.active');
+}
+
+
 /* auto */
 
 
