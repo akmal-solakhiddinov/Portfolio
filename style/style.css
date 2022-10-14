@@ -99,7 +99,7 @@ header nav ul li a:hover::after {
   left: 0;
 }
 
-header #menuBtn{
+header #menuBtn {
   display: none;
   width: 4rem;
   height: 4rem;
@@ -366,7 +366,7 @@ input[type="checkbox"]:checked:before {
   overflow: hidden;
 }
 .circle.per-html {
-  background-image: conic-gradient( #8a2be2 /* #B5838D */ 90%, #c364fa 0);
+  background-image: conic-gradient(#8a2be2 /* #B5838D */ 90%, #c364fa 0);
 }
 .circle.per-css {
   background-image: conic-gradient(blueviolet /* #B5838D */ 70%, #c364fa 0);
@@ -384,7 +384,7 @@ input[type="checkbox"]:checked:before {
   background-image: conic-gradient(blueviolet 30%, /* #FFCDB2 */ #c364fa 0);
 }
 .circle.per-sql {
-  background-image: conic-gradient(blueviolet 15%,  #c364fa 0);
+  background-image: conic-gradient(blueviolet 15%, #c364fa 0);
 }
 .circle .inner {
   display: flex;
@@ -401,88 +401,6 @@ input[type="checkbox"]:checked:before {
   font-weight: 300;
   color: white;
 }
-/* //// */
-/* 
-.skills .card-box {
-  display: block;
-  width: 50rem;
-  padding: 1rem 10rem 1rem 10rem;
-}
-
-.skills .card-box p {
-  font-size: 3rem;
-}
-
-.skills .card-box .progress_bar {
-  width: 100%;
-  height: 1.1rem;
-  background: none;
-  border: 1px solid black;
-  border-radius: 1rem;
-}
-
-.skills .card-box .progress_bar .progress_html {
-  background-color: #6e40c9;
-  width: 80%;
-  height: 0.8rem;
-  border-bottom-left-radius: 1rem;
-  border-top-left-radius: 1rem;
-  position: relative;
-}
-
-.skills .card-box .progress_bar .progress_css {
-  background-color: #6e40c9;
-  width: 70%;
-  height: 0.8rem;
-  border-bottom-left-radius: 1rem;
-  border-top-left-radius: 1rem;
-  position: relative;
-}
-
-.skills .card-box .progress_bar .progress_javascript {
-  background-color: #6e40c9;
-  width: 30%;
-  height: 0.8rem;
-  border-bottom-left-radius: 1rem;
-  border-top-left-radius: 1rem;
-  position: relative;
-}
-
-.skills .card-box .progress_bar .progress_react {
-  background-color: #6e40c9;
-  width: 6%;
-  height: 0.8rem;
-  border-bottom-left-radius: 1rem;
-  border-top-left-radius: 1rem;
-  position: relative;
-}
-
-.skills .card-box .progress_bar .progress_python {
-  background-color: #6e40c9;
-  width: 20%;
-  height: 0.8rem;
-  border-bottom-left-radius: 1rem;
-  border-top-left-radius: 1rem;
-  position: relative;
-}
-
-.skills .card-box .progress_bar .progress_php {
-  background-color: #6e40c9;
-  width: 15%;
-  height: 0.8rem;
-  border-bottom-left-radius: 1rem;
-  border-top-left-radius: 1rem;
-  position: relative;
-}
-
-.card-box .progress_bar .progress_sql {
-  background-color: #6e40c9;
-  width: 8%;
-  height: 0.8rem;
-  border-bottom-left-radius: 1rem;
-  border-top-left-radius: 1rem;
-  position: relative;
-} */
 
 /* Ending of SKILLS PAGE  */
 
@@ -506,25 +424,118 @@ input[type="checkbox"]:checked:before {
   align-items: center;
   justify-content: space-around;
   box-shadow: var(--box-shadow);
+  padding: 3rem 0;
 }
 
 .contact .container .social-m {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  padding: 2rem 0 4rem 0;
 }
 
 .contact .container .social-m .social_icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 3rem;
+  display: block;
   border: 2px solid var(--btn-color);
   border-radius: 50%;
-  padding: 1rem;
   width: 7rem;
   height: 7rem;
+}
+
+
+.contact .container .social-m .social_icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .container .social-m .social_icons a i {
+  font-size: 5rem;
+}
+
+.contact .container .social-m .social_icons:hover:nth-child(1) {
+  background: lightblue;
+}
+
+.contact .container .social-m .social_icons:hover:nth-child(2) {
+  background: red;
+}
+
+.contact .container .social-m .social_icons:hover:nth-child(3) {
+  background: lightseagreen;
+}
+
+.contact .container .social-m .social_icons:hover:nth-child(4) {
+  background: rgb(81, 81, 245);
+}
+
+.contact .container .social-m .social_icons:hover:nth-child(5) {
+  background: rgb(123, 123, 226);
+}
+
+.contact .container .social-m .social_icons:nth-child(1):before {
+  content: "Telegram";
+  position: relative;
+  bottom: -8rem;
+  color: #000;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: #f8e3a1;
+  visibility: hidden;
+}
+
+.contact .container .social-m .social_icons:nth-child(2):before {
+  content: "Instagram";
+  position: relative;
+  bottom: -8rem;
+  color: #000;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: #f8e3a1;
+  visibility: hidden;
+}
+
+.contact .container .social-m .social_icons:nth-child(3):before {
+  content: "WhatsApp";
+  position: relative;
+  bottom: -8rem;
+  color: #000;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: #f8e3a1;
+  visibility: hidden;
+}
+
+.contact .container .social-m .social_icons:nth-child(4):before {
+  content: "Facebook";
+  position: relative;
+  bottom: -8rem;
+  color: #000;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: #f8e3a1;
+  visibility: hidden;
+}
+
+.contact .container .social-m .social_icons:nth-child(5)::before {
+  content: "Linkedin";
+  position: relative;
+  bottom: -8rem;
+  color: #000;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: #f8e3a1;
+  visibility: hidden;
+}
+
+.contact .container .social-m .social_icons:hover::before{
+  visibility: visible;
+  transition: linear 0.2s;
 }
 
 .contact .container .container-form form {
@@ -591,12 +602,36 @@ input[type="email"] {
 }
 
 @media (max-width: 771px) {
-  header nav ul {
+  .global {
     display: none;
   }
 
-  header #menuBtn{
+  header nav .global {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #c364fa;
+    position: absolute;
+    width: 70%;
+    height: 100vh;
+    top: 110%;
+    right: -110%;
+  }
+
+  header nav .global a{
+    font-size: 3rem;
+  }
+
+  header #menuBtn {
     display: block;
+  }
+
+  header nav .global.\.toggle {
+    right: 0.1rem;
+    top: 100%;
+    transition: 0.4s ease-in-out;
   }
 
   .skills {
@@ -617,10 +652,9 @@ input[type="email"] {
     font-size: 50%;
   }
 
-  header #menuBtn{
+  header #menuBtn {
     display: block;
   }
-
 
   .heading {
     font-size: 2.5rem;
