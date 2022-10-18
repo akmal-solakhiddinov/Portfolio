@@ -30,6 +30,66 @@ document.querySelector('#menuBtn').onclick = () => {
   }
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function allPFunction(){
+console.log('salom');
+}
+
+
+function bFunction(){
+}
+
+
+function cFunction(){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 // fade 
 function reveal() {
