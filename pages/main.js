@@ -1,11 +1,11 @@
-var nodemailer = require("nodemailer");
+import { createTransport } from "nodemailer";
 
 const userName = document.getElementById("name").value;
 const userMAil = document.getElementById("mail").value;
 const userTxt = document.getElementById("txt").value;
 
 function myFunction() {
-  var transporter = nodemailer.createTransport({
+  var transporter = createTransport({
     service: "gmail",
     auth: {
       user: "akmalsalokhiddinov03@gmail.com",
