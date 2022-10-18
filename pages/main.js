@@ -1,6 +1,6 @@
- const express = require('express'); import express from 'express';
-
+ const express = require('express'); 
 var nodemailer = require("nodemailer");
+
 
 const userName = document.getElementById("name").value;
 const userMAil = document.getElementById("mail").value;
