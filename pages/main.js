@@ -1,3 +1,5 @@
+ const express = require('express'); import express from 'express';
+
 var nodemailer = require("nodemailer");
 
 const userName = document.getElementById("name").value;
