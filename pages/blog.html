@@ -6,11 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/style/blogStyle.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
 	<title>Blog</title>
 </head>
 
 <body>
 	<header>
+		<div class="switch">
+			<input type="checkbox" id="night">
+		</div>
+
+
 		<nav>
 			<ul class="global-list">
 				<li class="list-item">
@@ -31,10 +37,28 @@
 			</ul>
 		</nav>
 	</header>
+<section>
 
+	
+	<div class="txt-box">
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime voluptatum perspiciatis quidem voluptatem minus nesciunt officia fuga consequatur dolorum labore at a, non, quod similique voluptas facilis repellat quos quo, veniam alias nostrum. Quibusdam consequatur voluptatibus dolore suscipit nostrum similique vitae temporibus quae. Natus accusantium ducimus, eligendi quos debitis delectus. Reiciendis cum quidem nemo natus et fugit fuga dolorem molestias consectetur quod dolore nam sunt ab aspernatur pariatur debitis quis culpa aperiam, velit maiores animi, eaque facere atque! Perspiciatis unde tenetur aperiam neque corrupti at explicabo quia ratione facere magni.</p>
 
-  <div><a href="/pages/index.html"> SAlom</a></div>
+		<div class="time-box">
+			10.10.2020
+		</div>
+	</div>
 
+</section>
+
+<script>
+const mode = document.querySelector("#night");
+const body = document.querySelector("body");
+
+mode.addEventListener("change", () => {
+  body.classList.toggle("nightMode");
+});
+
+</script>
 
 
 </body>

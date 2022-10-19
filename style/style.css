@@ -6,7 +6,9 @@
   text-decoration: none;
   transition: all 0.3s linear;
   list-style-type: none;
+  
 }
+
 
 body,
 html {
@@ -451,6 +453,10 @@ input[type="checkbox"]:checked:before {
 
 .contact .container .social-m .social_icons a i {
   font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50% -50%);
 }
 
 .contact .container .social-m .social_icons:hover:nth-child(1) {
