@@ -275,6 +275,10 @@ input[type="checkbox"]:checked:before {
     padding: 5rem 2rem;
   }
 
+  aside{
+    display: none;
+  }
+
   header {
     left: 10%;
     right: 10%;
