@@ -437,49 +437,55 @@ input[type="checkbox"]:checked:before {
 }
 
 .contact .container .social-m .social_icons {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 2px solid var(--btn-color);
   border-radius: 50%;
   width: 7rem;
   height: 7rem;
+  position: relative;
 }
 
-
-.contact .container .social-m .social_icons a {
+.contact .container .social-m .social_icons a{
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  position: absolute;
 }
 
-.contact .container .social-m .social_icons a i {
-  font-size: 5rem;
+i{
   position: absolute;
   top: 50%;
   right: 50%;
   transform: translate(-50% -50%);
 }
 
-.contact .container .social-m .social_icons:hover:nth-child(1) {
+.contact .container .social-m .social_icons a i {
+  font-size: 5rem;
+}
+
+ .social_icons:hover:nth-child(1) {
   background: lightblue;
 }
 
-.contact .container .social-m .social_icons:hover:nth-child(2) {
+ .social_icons:hover:nth-child(2) {
   background: red;
 }
 
-.contact .container .social-m .social_icons:hover:nth-child(3) {
+ .social_icons:hover:nth-child(3) {
   background: lightseagreen;
 }
 
-.contact .container .social-m .social_icons:hover:nth-child(4) {
+ .social_icons:hover:nth-child(4) {
   background: rgb(81, 81, 245);
 }
 
-.contact .container .social-m .social_icons:hover:nth-child(5) {
+.social_icons:hover:nth-child(5) {
   background: rgb(123, 123, 226);
 }
 
-.contact .container .social-m .social_icons:nth-child(1):before {
+ .social_icons:nth-child(1):before {
   content: "Telegram";
   position: relative;
   bottom: -8rem;
@@ -491,7 +497,7 @@ input[type="checkbox"]:checked:before {
   visibility: hidden;
 }
 
-.contact .container .social-m .social_icons:nth-child(2):before {
+ .social_icons:nth-child(2):before {
   content: "Instagram";
   position: relative;
   bottom: -8rem;
@@ -503,7 +509,7 @@ input[type="checkbox"]:checked:before {
   visibility: hidden;
 }
 
-.contact .container .social-m .social_icons:nth-child(3):before {
+ .social_icons:nth-child(3):before {
   content: "WhatsApp";
   position: relative;
   bottom: -8rem;
@@ -515,7 +521,7 @@ input[type="checkbox"]:checked:before {
   visibility: hidden;
 }
 
-.contact .container .social-m .social_icons:nth-child(4):before {
+ .social_icons:nth-child(4):before {
   content: "Facebook";
   position: relative;
   bottom: -8rem;
@@ -527,7 +533,7 @@ input[type="checkbox"]:checked:before {
   visibility: hidden;
 }
 
-.contact .container .social-m .social_icons:nth-child(5)::before {
+ .social_icons:nth-child(5)::before {
   content: "Linkedin";
   position: relative;
   bottom: -8rem;
@@ -539,7 +545,7 @@ input[type="checkbox"]:checked:before {
   visibility: hidden;
 }
 
-.contact .container .social-m .social_icons:hover::before{
+ .social_icons:hover::before{
   visibility: visible;
   transition: linear 0.2s;
 }
