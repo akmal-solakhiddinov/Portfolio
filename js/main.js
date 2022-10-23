@@ -46,37 +46,61 @@ document.querySelector('#menuBtn').onclick = () => {
 
 
 
-function allPFunction(){
-console.log('salom');
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+{
+  let likes = 0;
+  $(document).ready(function () {
+    // ajax to get current likes
+    // let likes from server are 10
+    // assign the current likes to variable
+    likes = 10;
+    setLikes(likes);
+  });
+  
+  $("body").on("click", ".likeBtn", function () {
+    // ajax to post a current likes
+    // in success add increment to likes
+    likes++;
+    setLikes(likes);
+  });
+
+  function setLikes(count) {
+    $(".totalLikes").text(count);
+  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Likes Counter</title>
+</head>
+<body>
+<button class="likeBtn">
+  Like (<span class="totalLikes">0</span>)
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
 }
 
 
-function bFunction(){
-}
 
-
-function cFunction(){
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ */
 
 
 

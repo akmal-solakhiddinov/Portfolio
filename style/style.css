@@ -406,6 +406,85 @@ input[type="checkbox"]:checked:before {
 
 /* Ending of SKILLS PAGE  */
 
+
+/* Portfolio */
+
+.portfolio{
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.portfolio .heading{
+  display: block;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 600;
+  color: var(--btn-color);
+  padding: 2rem;
+}
+
+button{
+  background-color: none;
+  background: none;
+  border: none;
+}
+
+.portfolio .swipe-btn{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  background-color: #979696;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.portfolio .card-container{
+  display: flex; 
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.portfolio .card-container .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 30rem;
+  box-shadow: var(--box-shadow);
+  border: 1px solid black;
+}
+
+.portfolio .card-container .card .box{
+  font-size: 2rem;
+  box-sizing: border-box;
+}
+.portfolio .card-container .card .box img{
+  width: 100%;
+
+}
+
+.portfolio .card-container .card .box img:hover{
+  transform: scale(1.1);
+}
+
+.portfolio .card-container .card .box .blockk{
+  padding: 1rem;
+}
+
+
+
+
+
+
+
+/* portfolio */
+
+
+
 /* Beggining of Contact page  */
 .contact {
   display: flex;
@@ -429,6 +508,12 @@ input[type="checkbox"]:checked:before {
   padding: 3rem 0;
 }
 
+.container .f-txt{
+  width: 40rem;
+  display: block;
+  font-size: 2rem;
+  padding: 3rem 0;
+}
 .contact .container .social-m {
   display: flex;
   flex-direction: row;
@@ -454,12 +539,6 @@ input[type="checkbox"]:checked:before {
   position: absolute;
 }
 
-i{
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(-50% -50%);
-}
 
 .contact .container .social-m .social_icons a i {
   font-size: 5rem;

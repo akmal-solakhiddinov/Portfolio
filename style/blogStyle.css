@@ -144,6 +144,7 @@ aside{
 }
 
 .comment-box #pop{
+  display: none;
 }
 
 .comment-box #pop.\.active{
@@ -176,6 +177,14 @@ header nav ul li {
   font-size: 2rem;
 }
 
+header nav ul li a .bx{
+  font-size: 3rem;
+  color: white;
+}
+
+header nav ul li a .bx:hover{ 
+  color: orange;
+}
 
 
 
@@ -246,6 +255,11 @@ input[type="checkbox"]:checked:before {
 
 
 @media (max-width: 1024px) {
+
+  html{
+    font-size: 65%;
+  }
+
   section {
     padding: 5rem 7%;
   }
@@ -258,6 +272,11 @@ input[type="checkbox"]:checked:before {
 
 
 @media (max-width: 768px) {
+
+  html{
+    font-size: 59%;
+  }
+
   section {
     padding: 5rem 5%;
   }
@@ -271,8 +290,23 @@ input[type="checkbox"]:checked:before {
 
 
 @media (max-width: 425px) {
+
+  html{
+    font-size: 40%;
+  }
+
+  .home{
+    margin-bottom: 1rem;
+  }
+
+  content{
+width: 100%;
+  }
+
   section {
     padding: 5rem 2rem;
+width: 100%;
+
   }
 
   aside{
